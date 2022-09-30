@@ -5,7 +5,7 @@
     @foreach ($posts as $post)
     <article>
     <h2>
-        <a href="/blog/{{$post->id}}">{{$post->judul}}</a>
+        <a href="/blog/{{$post->slug}}">{{$post->judul}}</a>
     </h2>
     <h5>{{$post->penulis}}</h5>
     <p>{{$post->exceprt}}</p>

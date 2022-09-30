@@ -21,14 +21,14 @@ class PostController extends Controller
     public function index(){
         return view('blog',[
             "title" => "blog",
-            "posts" => \App\Models\Post::all()
+            "posts" => Post::all()
         ]);
     }
-    public function show($slug){
+    public function show(Post $posts){
         
             return view('post',[
                 "title" => "Singlepost",
-                "post" => Post::find($slug)
+                "post" => $posts
             ]);
         
     }
