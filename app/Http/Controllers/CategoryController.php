@@ -13,10 +13,7 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
-    }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -25,7 +22,16 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        //
+        
+    }
+
+    public function index(Category $category){
+        
+        return view('category', [
+            "title" => $category->nama,
+            "posts" => $category->posts,
+            "category" => $category->nama
+        ]);
     }
 
     /**
