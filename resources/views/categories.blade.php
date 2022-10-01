@@ -8,10 +8,6 @@
         <ul>
             <li><a href="/categories/{{$category->slug}}">{{$category->nama}}</a></li>
         </ul>
-    
-
-    
-    
     </article>   
     @endforeach
     

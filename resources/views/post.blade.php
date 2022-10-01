@@ -1,8 +1,6 @@
 @extends("layouts/main")
 
 
-
-
 @section("container")
 <article>
     

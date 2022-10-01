@@ -7,7 +7,7 @@
     <h2>
         <a href="/blog/{{$post->slug}}" class="text-decoration-none">{{$post->judul}}</a>
     </h2>
-    <p>By. <a href="#">{{$post->user->name}}</a> in <a href="/categories/{{$post->category->slug}}" class="text-decoration-none">
+    <p>By. <a href="/author/{{$post->user->username}}">{{$post->user->name}}</a> in <a href="/categories/{{$post->category->slug}}" class="text-decoration-none">
         {{$post->category->nama}}</a></p>
     <h5>{{$post->penulis}}</h5>
     <p>{{$post->exceprt}}</p>
