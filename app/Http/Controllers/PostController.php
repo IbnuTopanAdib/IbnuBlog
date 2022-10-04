@@ -20,8 +20,8 @@ class PostController extends Controller
     }
     public function index(){
         return view('blog',[
-            "title" => "blog",
-            "posts" => Post::all()
+            "title" => "All post",
+            "posts" => Post::with(['category','user'])->latest()->get()
         ]);
     }
     public function show(Post $posts){

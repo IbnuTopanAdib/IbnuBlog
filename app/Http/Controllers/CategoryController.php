@@ -27,10 +27,10 @@ class CategoryController extends Controller
 
     public function index(Category $category){
         
-        return view('category', [
-            "title" => $category->nama,
-            "posts" => $category->posts,
-            "category" => $category->nama
+        return view('blog', [
+            "title" => "Post Menurut Kategori: $category->nama",
+            "posts" => $category->posts->load('category','user')
+            
         ]);
     }
 
