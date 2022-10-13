@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,17 +7,15 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link {{($title==="home")? 'active' : ''}}" href="/">Home</a>
+            <a class="nav-link {{($title==="home")? 'active' : ''}} fw-bold" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{($title==="about")? 'active' : ''}}" href="/about">About</a>
+            <a class="nav-link {{($title==="about")? 'active' : ''}} fw-bold" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link {{($title==="blog")? 'active' : ''}}" href="/blog">Blog</a>
+            <a class="nav-link {{($title==="blog")? 'active' : ''}} fw-bold" href="/blog">Blog</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
+         
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

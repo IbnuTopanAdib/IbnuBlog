@@ -18,10 +18,16 @@ class PostController extends Controller
         ]
     );
     }
+    // public function index(){
+    //     return view('blog',[
+    //         "title" => "All post",
+    //         "posts" => Post::with(['user','category'])->latest()->get()
+    //     ]);
+    // }
     public function index(){
         return view('blog',[
             "title" => "All post",
-            "posts" => Post::with(['category','user'])->latest()->get()
+            "posts" => Post::latest()->get()
         ]);
     }
     public function show(Post $posts){
