@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
         //     'nama' => 'Python',
         //     'slug' => 'python'
         // ]);
-        Category::factory(2)->create();
+        Category::factory(3)->create();
 
         Post::factory(20)->create();
 

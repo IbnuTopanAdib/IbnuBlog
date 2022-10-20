@@ -15,6 +15,9 @@
           <li class="nav-item">
             <a class="nav-link {{($title==="blog")? 'active' : ''}} fw-bold" href="/blog">Blog</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link {{($title==="categories")? 'active' : ''}} fw-bold" href="/categories">Categories</a>
+          </li>
          
         </ul>
         <form class="d-flex">

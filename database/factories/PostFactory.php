@@ -17,10 +17,12 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'judul' => fake()->sentence(mt_rand(1,5)),
+            'judul' => fake()->sentence(mt_rand(1,2)),
             'slug' => fake()->slug(),
-            'exceprt' => fake()->paragraph(),
-            'body' => fake()->paragraph(mt_rand(5,8)),
+            'exceprt' => fake()->paragraph(1),
+            // 'body' => '<p>'. implode('</p><p>', fake()->paragraphs(mt_rand(10,20))),
+            'body' =>collect(fake()->paragraphs(mt_rand(10,20)))
+            ->map(fn($p)=> "<p>$p</p>")->implode(''),
             'category_id'=> mt_rand(1,2),
             'user_id' => mt_rand(1,3)
 
