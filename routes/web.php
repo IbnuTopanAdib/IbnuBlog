@@ -40,11 +40,3 @@ Route::get('/categories', function(){
 
     ]);
 });
-
-Route::get('/author/{user:username}', function(User $user){
-    return view('blog',[
-        'title' => "Post Menurut Authors: $user->name",
-        'posts' => $user->posts->load('category','user')
-
-    ]);
-});

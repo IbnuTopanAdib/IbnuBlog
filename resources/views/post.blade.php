@@ -8,7 +8,7 @@
         <div class="col-md-8">
            
             <h2 class="text-center">{{$post->judul}}</h2>
-            <p><a href="/author/{{$post->user->username}}" class="text-decoration-none">By. {{$post->user->name}}</a> in <a href="/categories/{{$post->category->slug}}" class="text-decoration-none">{{$post->category->nama}}</a></p>
+            <p><a href="/blog?author={{$post->user->username}}" class="text-decoration-none">By. {{$post->user->name}}</a> in <a href="/blog?category={{$post->category->slug}}" class="text-decoration-none">{{$post->category->nama}}</a></p>
             <h5>{{$post->penulis}}</h5>
             <img src="https://source.unsplash.com/1200x400/?{{$post->category->nama}}" class="card-img-top" alt="{{$post->category->nama}}" class="img-fluid">
             <article class="my-3">

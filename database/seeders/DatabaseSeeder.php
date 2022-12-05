@@ -42,7 +42,7 @@ class DatabaseSeeder extends Seeder
         // ]);
         Category::factory(3)->create();
 
-        Post::factory(20)->create();
+        Post::factory(50)->create();
 
 
         
