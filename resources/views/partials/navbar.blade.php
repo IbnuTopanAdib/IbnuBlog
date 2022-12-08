@@ -20,10 +20,15 @@
           </li>
          
         </ul>
-        <form class="d-flex">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="/login" class="nav-link"><i class="bi bi-box-arrow-in-right"></i> Login</a>
+          </li>
+        </ul>
+        {{-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </form> --}}
       </div>
     </div>
   </nav>
